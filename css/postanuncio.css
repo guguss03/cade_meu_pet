@@ -1,0 +1,305 @@
+/* Começo Reset */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Fim Reset */
+
+@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@100;700;800&display=swap");
+
+body{
+    background-color: #17ced4;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Começo Topo */
+#topo{
+    
+    width: 100%;
+    height: 5%; 
+    background-color: #17ced4;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+}
+
+.kdmeupet{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 100%;
+    padding-top: 2.5%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.logo{
+    width: 100px;
+    height: 100%;
+    display: block;
+    /* background-color: red; */
+}
+
+.menu{
+    width:70%;
+    height: 100%;
+    /* background-color: lightgreen; */
+    /* padding: 0px 0px 0px 50px; */
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+nav{
+    margin-top: 2.5%;
+    vertical-align: auto;
+    width: 70%;
+    height: 50%;
+    /* background-color: gray; */
+    display: center;
+    justify-content: flex-end;
+    
+}
+
+nav ul{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    justify-content: center;
+}
+
+nav ul a{
+    color: black;
+    text-decoration: none;
+    padding: 2% 2.5% 0% 2.5%;
+    /*margin: ; espaçamento externo*/
+    /* margin-right: 0.4%; */
+    text-align: center;
+    border-right: 0% transparent transparent;
+    background-color: #1e7477;
+    border-radius: 20% 20%;
+    
+
+}
+
+nav ul a:last-child{
+    border: none;
+}
+
+.telaAberta{
+    background-color: #17ced4;
+    color: black;
+}
+
+
+
+nav ul a:link{}
+
+nav ul a:visited{}
+
+nav ul a:hover{
+    background-color: gainsboro;
+    transition: ease-in-out 0.5s;
+}
+
+nav ul a:active{
+    color: black;
+    background-color: gray;
+    /* transition: ease-in-out 0.5s; */
+}
+
+nav ul a li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+
+/* Fim Topo */
+
+/* Começo Conteudo */
+.conteudo{
+    height: 200%;
+    background-color: white;
+    background-image: url(../img/dogfundo.jpg);
+    background-size: cover;
+    background-attachment: fixed;/* Paralax */
+    
+}
+
+.fundodoconteudo{
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.698);
+    display: flex;
+    /* justify-content: space-around; */
+    flex-wrap: wrap;
+}
+
+.card{
+    height: 60%;
+    width: 40%;
+    background-color: white;
+    /* padding-bottom: 1%; */
+    /* margin-top: 3%;
+    margin-left: 3%; */
+    margin: 3% 0 3% 3%;
+}
+
+/* style do anuncio */
+.desc-anuncio{
+    height: 90%;
+    width: 51%;
+    background-color: white;
+    margin: 3%;
+    text-align: left;
+}
+
+.span-desc{
+    height: 5%;
+    width: 100%;
+    padding-top: 2%;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.form{
+    padding-left: 4%;
+}
+
+.botao-post{
+    height: 100%;
+    width: 100%;
+    align-content: center;
+}
+
+.btn-postar{
+    height: 20%;
+    width: 33.33%;
+    margin: 3%;
+    margin-left: 33.33%;
+    background-color: black; 
+    color: white;
+    font-size: large;
+    border-radius: 5px;
+}
+
+.inserir{
+    width: 30%;
+    padding: 1% 2%;
+    margin: 2% 2%;
+    display: inline-block;
+  }
+  
+  #inserir-desc{
+      width: 50%;
+      padding: 5.5% 2%;
+      margin: 2% 2%;
+      display: inline-block;
+  }
+
+/* style do anuncio */
+
+.card:hover{
+    box-shadow: 0px 20px 30px rgb(135, 226, 238);
+    transition: 0.5s;
+    /* box-shadow: 0px 25px 45px black; */
+}
+
+.img-card{
+    /* height: 80%;
+    width: 95%; */
+    padding-top: 10%;
+    background-color: white;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-pet{
+    display: flex;
+    justify-content: center;
+}
+
+/* Fim Conteudo */
+
+/* menu dropdown */
+.dropbtn {
+    
+    background-color: #1e7477;
+    border-radius: 20% 20%;
+    color: black;
+    padding: 10%;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 25%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: gainsboro; transition: ease-in-out 0.5s;}
+/* menu dropdown */
+
+/* Fim btn-whatsapp */
+
+/* Começo Rodape */
+
+.quem-somos{
+    font-size: 50px;
+}
+
+.rodape2{
+    background-color: #17ced4;
+}
+
+footer{
+    background-color: #17ced4;
+    margin: 20px;
+    background-color: transparent;
+    align-items: center;
+}
+
+.text1{
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+
+/* Fim Rodape */

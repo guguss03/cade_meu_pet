@@ -1,0 +1,104 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    /* background-image: ; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.Conteudo{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 35%;
+    height: 35%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    /* border-radius: 40px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
+}
+
+.Conteudo2{
+    width: 31.6%;
+    height: 30%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    margin-left: 1%;
+    /* border-radius: 40px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.botao{
+    margin: 1% 1% 5% 0%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Dados_do_Usuario{
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    margin-bottom: 10%;
+    margin-top: 10%;
+
+}
+
+.bt-login{
+    background: url('../img/login-btn.png');
+    width:10%;
+	height:2.5%;
+}
+.LoginBottom{
+    justify-content: center;
+    display: flex;
+}
+
+.Preencher_dados{
+    /* margin-left: 10%; */
+    margin-top: 15%;
+}
+
+.btn-postar{
+    height: 10%;
+    width: 33.33%;
+    margin: 3%;
+    /* margin-left: 33.33%; */
+    background-color: black; 
+    /* color: white; */
+    color: #fff;
+    font-size: large;
+    border-radius: 5px;
+}
+
+
+.LoginBottom{
+    justify-content: center;
+    display: flex;
+}
+input{
+background-color: lightgrey;
+border-radius: 60px;
+padding: 5%;
+border: none;
+box-shadow: 0 0 0 0 ;
+outline: 0;
+}
+/* .botao{
+    padding-left: 10%;
+} */
+h1{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+img{
+    border-radius: 10%;
+}
