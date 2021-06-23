@@ -7,7 +7,7 @@ $senha = filter_input(INPUT_POST,'senha');
 
 if($name && $email) {
 
- $sql = $pdo->prepare("INSERT INTO users (name,email,pass) VALUES (:name,:email,:senha)");
+$sql = $pdo->prepare("INSERT INTO users (name,email,pass) VALUES (:name,:email,:senha)");
 $sql->bindValue(':name', $name);
 $sql->bindValue(':email',$email);
 $sql->bindValue(':senha',$senha);

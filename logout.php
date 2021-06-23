@@ -1,5 +1,4 @@
 <?php
-	//inicia a sessao e destroi todos os dados gravados em cache etc
     session_start();
 	ob_start();
     $_SESSION = array();

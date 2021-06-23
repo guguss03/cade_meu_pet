@@ -27,7 +27,12 @@
 				</form>
 
 				<div class="concordo">
-				<a href="cadastro.php">NÃO TEM CONTA? CADASTRE-SE, É RAPIDINHO!</a></div>
+				<a href="cadastro.php">NÃO TEM CONTA? CADASTRE-SE, É RAPIDINHO!</a>
+				</div>
+
+				<div class="concordo2">
+				<a href="recsenha.php">ESQUECI A SENHA!</a>
+				</div>
 
             </div> 
         </div>
@@ -46,14 +51,10 @@ $action = isset($_POST['acao']) ? trim($_POST['acao']) : '';
 		
 		switch($action){
 			case 'Logar':
-				//requerimos nossa classe de autentica��o passando os valores dos inputs como par�metros
 				require_once('class/Autentica.class.php');
-				//instancio a classse para podermos usar o m�todo nela contida
 				$Autentica = new Autentica();
-				//setamos 
 				$Autentica->email	= $_POST['email'];
 				$Autentica->pass	= $_POST['pass'];
-				//chamamos nosso m�todo						
 				if($Autentica->Validar_Usuario()){
 				   echo  "<script type='text/javascript'>
 							location.href='logado.php'
